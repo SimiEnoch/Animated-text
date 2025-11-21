@@ -56,7 +56,8 @@ export default function AnimatedTextArt(): JSX.Element {
 
   const [density, setDensity] = useState(6);
   const [scheme, setScheme] = useState<PaletteName>('neon');
-  const [tweak, setTweak] = useState(1);
+  const [tweak] = useState(1);
+
   const [running, setRunning] = useState(true);
   const [preset, setPreset] = useState<Preset>('float');
   const [showPanel, setShowPanel] = useState(false);
@@ -458,7 +459,9 @@ export default function AnimatedTextArt(): JSX.Element {
               <textarea
                 ref={textareaRef}
                 defaultValue={text}
-                onInput={(e) => setText(e.target.value)}
+                onInput={(e) =>
+                  setText((e.target as HTMLTextAreaElement).value)
+                }
                 rows={3}
                 style={{ color: BLOOD_RED }}
                 className="
