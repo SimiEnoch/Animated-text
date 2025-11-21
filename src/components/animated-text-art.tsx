@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { HiOutlineSun, HiOutlineMoon } from 'react-icons/hi2';
 
@@ -31,7 +32,7 @@ const PALETTES: Record<PaletteName, string[]> = {
 
 const BLOOD_RED = '#7B0000';
 
-export default function AnimatedTextArt(): JSX.Element {
+export default function AnimatedTextArt(): React.JSX.Element {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const offRef = useRef<HTMLCanvasElement | null>(null);
   const rafRef = useRef<number | null>(null);
