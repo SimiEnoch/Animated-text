@@ -615,7 +615,7 @@ export default function AnimatedTextArt(): React.JSX.Element {
           <span className="!text-center block">Made By Simi</span>
 
           <div className="mt-1 text-[13px] text-red-500 font-bold opacity-70 text-center">
-            Whatsapp: 09039446158
+            Email: similoluwaenoch@gmail.com
           </div>
 
           <div className="px-6 py-3 border-t border-white flex items-center gap-4 mt-2">
